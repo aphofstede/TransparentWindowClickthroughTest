@@ -37,53 +37,6 @@ class MaskedView: NSView {
         path.fill()
     }
 
-    override func viewDidMoveToWindow() {
-        // Create a background with label
-//        self.wantsLayer = true
-//        self.layer! = CALayer()
-//        self.layer!.masksToBounds = false
-//        self.layer!.backgroundColor = NSColor.alternateSelectedControlColor.cgColor
-//
-//        let maskLayer = CAShapeLayer()
-//        maskLayer.path = self.createWindowBackgroundPath(self)
-//        self.layer!.mask = maskLayer
-//        self.layer!.needsDisplayOnBoundsChange = true
-
-    }
-
-    func createWindowBackgroundPath(_ view:NSView)-> CGPath
-    {
-        let rect = view.bounds
-        let path = CGMutablePath()
-
-        let topLeft = CGPoint(x: rect.minX, y: rect.maxY)
-        let topRight = CGPoint(x: rect.maxX, y: rect.maxY)
-        let bottomRight = CGPoint(x: rect.maxX, y: rect.minY)
-        let bottomLeft = rect.origin
-
-        // Start top right
-        path.move(to: topRight)
-
-        // Make some gaps all around
-        path.addLine(to: NSPoint(x: (topRight.x - (topRight.x/3*2)), y: topRight.y))
-        path.addLine(to: NSPoint(x: (topRight.x - (topRight.x/3*2)), y: (topRight.y - 50)))
-        path.addLine(to: NSPoint(x: (topRight.x - (topRight.x/3*1)), y: (topRight.y - 50)))
-        path.addLine(to: NSPoint(x: (topRight.x - (topRight.x/3*1)), y: topRight.y))
-        path.addLine(to: NSPoint(x: topLeft.x, y: topLeft.y))
-        path.addLine(to: NSPoint(x: topLeft.x, y: (topLeft.y - (topLeft.y/3*2))))
-        path.addLine(to: NSPoint(x: topLeft.x - 50, y: (topLeft.y - (topLeft.y/3*2))))
-        path.addLine(to: NSPoint(x: topLeft.x - 50, y: (topLeft.y - (topLeft.y/3*1))))
-        path.addLine(to: NSPoint(x: topLeft.x, y: (topLeft.y - (topLeft.y/3*1))))
-        path.addLine(to: NSPoint(x: bottomLeft.x, y: bottomLeft.y))
-        path.addLine(to: NSPoint(x: bottomRight.x, y: bottomRight.y))
-        path.addLine(to: NSPoint(x: topRight.x, y: topRight.y))
-
-        // Close it to top right
-        path.closeSubpath()
-
-        return path;
-    }
-
     override func acceptsFirstMouse(for event: NSEvent?) -> Bool {
         return true
     }
