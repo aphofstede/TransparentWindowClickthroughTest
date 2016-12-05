@@ -3,7 +3,7 @@
 //  TransparentWindowClickthroughTest
 //
 //  Created by Alexander Hofstede on 05/12/2016.
-//  Copyright © 2016 Hofstede Software. All rights reserved.
+//  This is free and unencumbered software released into the public domain.
 //
 
 import Cocoa
