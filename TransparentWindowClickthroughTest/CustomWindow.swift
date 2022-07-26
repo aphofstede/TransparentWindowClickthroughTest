@@ -10,7 +10,7 @@ import Cocoa
 
 class CustomWindow: NSWindow {
 
-    override init(contentRect: NSRect, styleMask style: NSWindowStyleMask, backing bufferingType: NSBackingStoreType, defer flag: Bool) {
+    override init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing bufferingType: NSWindow.BackingStoreType, defer flag: Bool) {
         super.init(contentRect: contentRect, styleMask: .borderless, backing: bufferingType, defer: false)
 
         self.backgroundColor = NSColor.clear

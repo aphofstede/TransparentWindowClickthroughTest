@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE915EC9288FC234007BC700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90C0A41DEFF15900548568 /* AppDelegate.swift */; };
 		FA90C0A71DEFF15900548568 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90C0A61DEFF15900548568 /* ViewController.swift */; };
 		FA90C0A91DEFF15900548568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA90C0A81DEFF15900548568 /* Assets.xcassets */; };
 		FA90C0AC1DEFF15900548568 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA90C0AA1DEFF15900548568 /* Main.storyboard */; };
@@ -111,6 +112,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -144,6 +146,7 @@
 				FAAC7CDF1DF56CDC00DA758A /* MaskedView.swift in Sources */,
 				FA957D0C1DF1643C00417518 /* CustomWindow.swift in Sources */,
 				FAAC7CE21DF5774800DA758A /* BackgroundLayer.swift in Sources */,
+				EE915EC9288FC234007BC700 /* AppDelegate.swift in Sources */,
 				FA90C0A71DEFF15900548568 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +265,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hs.TransparentWindowClickthroughTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -276,7 +279,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hs.TransparentWindowClickthroughTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
